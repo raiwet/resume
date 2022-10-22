@@ -414,19 +414,19 @@ a, a:visited {
 	border: 1px solid var(--accent-color);
 	display:block;
 	padding:12px;
-	width:135px;
+	width:150px;
 	user-select: none;
 	-webkit-user-select: none;
 	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
 	margin-left:10px;
 	margin-bottom:80px;
 	opacity:0;
-	transition: all 0.4s;
+	transition: all 0.3s;
 }
 
 .footer.active {
 	opacity:1;
-	transition: all 0.4s;
+	transition: all 0.3s;
 }
 
 .button-download {
@@ -467,7 +467,6 @@ a, a:visited {
 	height:15px;
 	line-height: 15px;;
 }
-
 
 @media only screen and (max-width: 1100px) {
 	.address-column {
