@@ -5,6 +5,20 @@
 		<link href="assets/font-awesome/css/brands.css" rel="stylesheet">
 		<link href="assets/font-awesome/css/solid.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<script>
+			myID = document.getElementById("customID");
+			
+			var myScrollFunc = function() {
+			  var y = window.scrollY;
+			  if (y >= 800) {
+				myID.className = "footer show"
+			  } else {
+				myID.className = "footer hide"
+			  }
+			};
+			
+			window.addEventListener("scroll", myScrollFunc);
+		</script>
 		<title>Resume &bull; Michael Raiwet</title>
 	</head>
 	<body>
@@ -1045,7 +1059,7 @@
 				</div>
 			</div>
 			<a href="assets/pdf/resume/michael-raiwet-resume.pdf" target="_blank" class="footer">
-				<div class="button-download">
+				<div class="button-download" id="top">
 					<div class="button-icon">
 						<i class="fa-solid fa-file-arrow-down"></i>
 					</div>
@@ -1054,7 +1068,7 @@
 							Download PDF
 						</div>
 						<div class="button-text-last-updated">
-							Last updated: 2022-10-22
+							Updated on 2022-10-22
 						</div>
 					</div>
 				</div>

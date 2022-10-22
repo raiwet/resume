@@ -414,10 +414,12 @@ a, a:visited {
 	border-radius: 60px;
 	border: 1px solid var(--accent-color);
 	display:block;
-	padding:20px;
-	width:200px;
+	padding:12px;
+	width:170px;
 	user-select: none;
 	-webkit-user-select: none;
+	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);;
+	margin-bottom:80px;
 }
 
 .button-download {
@@ -429,31 +431,43 @@ a, a:visited {
 .button-icon {
 	display:flex;
 	width:35px;
-	font-size:2.4rem;
+	font-size:2.0rem;
 	color: #ffffff;
 	justify-content: center;
 	align-items: center;
-	padding-right:20px;}
+	padding-right:10px;}
 
 .button-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .button-text-download {
 	display:flex;
 	font-weight: bold;
 	color: #ffffff;
-	font-size:0.9rem;
+	font-size:0.8rem;
+	height:20px;
 }
 
 .button-text-last-updated {
 	display:flex;
-	font-size:0.7rem;
+	font-size:0.6rem;
 	font-style: italic;
-	color: var(--accent-color-grey);
+	color: rgba(255, 255, 255, 0.5);
 	font-weight:300;
+	height:15px;
+	line-height: 15px;;
+}
+
+.hide {
+	opacity:0;
+	left:-100%;
+}
+.show {
+	opacity:1;
+	left:0;
 }
 
 
