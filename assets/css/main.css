@@ -49,13 +49,13 @@ sup {
 }
 
 .logo-column {
-	margin: auto;
+	display:flex;
 }
 
 .logo {
 	width: 30%;
 	display: flex;
-	padding: 10px;
+	justify-content: center;
 }
 
 .logo img {
@@ -266,12 +266,12 @@ td {
 	font-weight: bold;
 }
 
-.selected-works-item-title a, .download-link a {
+.selected-works-item-title a  {
 
 	transition: all 0.3s ease-out;
 }
 
-.selected-works-item-title a:hover, .download-link a:hover {
+.selected-works-item-title a:hover {
 	color: var(--accent-color);
 	transition: all 0.3s ease-out;
 }
@@ -405,12 +405,57 @@ a, a:visited {
 	display:inline;
 }
 
-.last-updated {
-	margin-left:0.75rem;
-	margin-bottom:6.0rem;
+.footer {
+	position: -webkit-sticky; 
+	position: sticky;
+	bottom: 40px;
+	left: 40px;
+	background: var(--accent-color);
+	border-radius: 60px;
+	border: 1px solid var(--accent-color);
+	display:block;
+	padding:20px;
+	width:200px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.button-download {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-icon {
+	display:flex;
+	width:35px;
+	font-size:2.4rem;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	padding-right:20px;}
+
+.button-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.button-text-download {
+	display:flex;
+	font-weight: bold;
+	color: #ffffff;
+	font-size:0.9rem;
+}
+
+.button-text-last-updated {
+	display:flex;
+	font-size:0.7rem;
 	font-style: italic;
 	color: var(--accent-color-grey);
+	font-weight:300;
 }
+
 
 @media only screen and (max-width: 1100px) {
 	.address-column {
@@ -430,8 +475,17 @@ a, a:visited {
 		flex-direction: column;
 	}
 	
-	.logo, .contact-section, .job-title-column, .job-description-column  {
+	.logo, .job-title-column, .job-description-column  {
 		width:100%;
+	}
+	
+	.contact-section {
+		justify-content: space-around;
+		width:100%;
+	}
+	
+	.logo {
+		margin-bottom:20px;
 	}
 	
 	.job-title-column {
