@@ -414,7 +414,7 @@ a, a:visited {
 	border: 1px solid var(--accent-color);
 	display:block;
 	padding:12px;
-	width:150px;
+	width:160px;
 	user-select: none;
 	-webkit-user-select: none;
 	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
