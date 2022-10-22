@@ -412,6 +412,7 @@ a, a:visited {
 	background: var(--accent-color);
 	border-radius: 50px;
 	border: 1px solid var(--accent-color);
+	display:block;
 	padding:12px;
 	width:135px;
 	user-select: none;
@@ -419,6 +420,13 @@ a, a:visited {
 	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
 	margin-left:10px;
 	margin-bottom:80px;
+	opacity:0;
+	transition: all 0.4s;
+}
+
+.footer.active {
+	opacity:1;
+	transition: all 0.4s;
 }
 
 .button-download {

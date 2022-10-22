@@ -1,20 +1,9 @@
-const scrollBtn = document.querySelector(".scroll-to-top");
+const toTop = document.querySelector(".footer");
 
-const refreshButtonVisibility = () => {
-	if (document.documentElement.scrollTop <= 20) {
-		scrollBtn.style.display = "none";
+window.addEventListener("scroll", () => {
+	if (window.pageYOffset > 150) {
+		toTop.classList.add("active");
 	} else {
-		scrollBtn.style.display = "block";
+		toTop.classList.remove("active");
 	}
-};
-
-refreshButtonVisibility();
-
-scrollBtn.addEventListener("click", () => {
-	document.body.scrllTop = 0;
-	document.documentElement.scrollTop = 0;
-});
-
-document.addEventListener("scroll", (e) => {
-	refreshButtonVisibility();
 });
