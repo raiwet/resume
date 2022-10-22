@@ -1,0 +1,498 @@
+/* 
+Preamble ...
+*/
+ 
+/* Root */
+html {
+	--icon-space: 25px;
+	--accent-color: rgba(86, 42, 217, 1);
+	--accent-color-alt: #004aff;
+	--accent-color-grey: rgba(169, 165, 180, 0.8);
+	overscroll-behavior-x: none;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	overscroll-behavior-x: none;
+	line-height: 1.4rem;
+	font-size:0.9rem;
+}
+
+em {
+	padding-left:0.2rem;
+}
+
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.25rem;
+  font-size: 0.5rem;
+}
+/* Structure */
+.container {
+	margin: 40px auto;
+	width: 90%;
+	max-width: 1050px;
+}
+
+.content {
+	
+}
+
+/** Header **/
+.header {
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	
+}
+
+.logo-column {
+	margin: auto;
+}
+
+.logo {
+	width: 30%;
+	display: flex;
+	padding: 10px;
+}
+
+.logo img {
+	width:200px;
+	display:block;
+	padding-bottom:20px;
+}
+
+.logo h1 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	text-align: center;
+	margin:0;
+}
+
+.contact-section {
+	width: 60%;
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-column {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width:185px;
+}
+
+.contact-column-item {
+	display: flex;
+	flex-direction: column;
+}
+
+/** Employment History **/
+.timeline-table {
+	display: flex;
+	justify-content: space-between;
+}
+
+.timeline-headings {
+	display:flex;
+	flex-direction: column;
+	padding-bottom:10px;
+	width:105px;
+}
+
+.timeline-headings-item {
+	display: flex;
+	padding: 0 0.8rem;
+	vertical-align: middle;
+	font-size: 0.5rem;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--accent-color-grey);
+	border-right: 1px solid var(--accent-color-grey);
+	height: 31px;
+	align-items: center;
+}
+
+.timeline-table-table {
+	display:flex;
+	width: calc(100% - 105px);
+	overflow: auto;
+	direction: rtl;
+	padding-bottom:0.75rem;
+
+}
+
+/*** Timeline Table ***/
+table {
+	width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+	direction: ltr;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin-right:0.1rem;
+}
+
+th {
+	padding: 0 0.8rem 0.7rem 0.8rem;
+	border-left: 1px solid var(--accent-color-grey);
+	border-right: 1px solid var(--accent-color-grey);
+	font-size: 0.6rem;
+	height:31.5px;
+	text-align: left;
+	vertical-align: bottom;
+	width: 67.8px;
+}
+
+td {
+	border: 1px solid var(--accent-color-grey);
+	font-size:0.5rem;
+	height: 32px;
+	color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+}
+
+/** Employment + Education History **/
+
+
+/** Column Section **/
+.column-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-column {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+}
+
+.left-column-item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.column-item-content {
+	display:flex;
+	margin-bottom:25px;
+}
+
+.right-column {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+/* Components */
+.section {
+	margin-bottom: 25px;
+}
+
+.icon-heading {
+	display:flex;
+}
+
+.content .icon-heading {
+	height:60px;
+}
+
+.icon {
+	display:flex;
+	width: var(--icon-space);
+	padding: 10px;
+	color: var(--accent-color);
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.header .icon {
+	font-size:1.25rem;
+	
+}
+
+.content .icon {
+	font-size: 1.6rem;
+}
+
+.icon-address {
+	align-items: start;
+	padding-top:0.67rem;
+}
+
+
+.icon-heading-heading {
+	display:flex;
+	width: calc(100% - var(--icon-space));
+	padding: 10px;
+	align-items: center;
+}
+
+.header .icon-heading-heading {
+	font-size: 0.9rem;
+}
+
+.content .icon-heading-heading {
+	font-size: 1.3rem;
+}
+
+/* Selected Works */
+.selected-works {
+	display:flex;
+	flex-direction: column;
+	width:100%;
+}
+
+.selected-works-item {
+	display:flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.selected-works-item-heading {
+	display:flex;
+	justify-content: space-between;
+}
+
+.selected-works-item-title {
+	display:flex;
+	font-weight: bold;
+}
+
+.selected-works-item-title a, .download-link a {
+
+	transition: all 0.3s ease-out;
+}
+
+.selected-works-item-title a:hover, .download-link a:hover {
+	color: var(--accent-color);
+	transition: all 0.3s ease-out;
+}
+
+.download-link {
+	font-weight: bold;
+}
+
+.selected-works-item-year-published {
+	display:flex;
+}
+
+.selected-works-item-subtitle {
+	display:flex;
+	color: var(--accent-color-grey);
+}
+
+.selected-works-item-summary {
+	display:flex;
+}
+
+
+.normal-list ul {
+	list-style: '\2022';
+	padding-left: 1.62rem;
+	margin:0;
+}
+
+.normal-list li::marker {
+	color: var(--accent-color-grey);
+}
+	
+.inline-list li:after {
+	content: '\00a0\2022';
+	margin:0 0.4rem;
+	color: var(--accent-color-grey);
+}
+
+.inline-list li:last-child:after {
+	content: '';
+	margin: 0;
+}
+
+
+.normal-list li {
+	padding-bottom:0.6rem;
+	padding-left:1.82rem;
+
+}
+
+.inline-list li {
+	display: inline;
+	word-wrap: break-word;
+	padding-left:0rem;
+
+}
+
+.inline-list ul {
+	padding:0;
+	margin:0;
+}
+
+.table-job {
+	background: var(--accent-color);
+}
+
+.table-job-alt {
+	background: var(--accent-color-alt);
+}
+
+a, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+.history {
+	display:flex;
+	flex-direction: column;
+}
+
+.company-row {
+	display: flex;
+	font-weight: bold;
+	padding:0.4rem 0;
+}
+
+.college-row {
+	display: flex;
+	flex-direction: column;
+	padding:0 0 0.4rem 0;
+}
+
+.college-subrow {
+	width:100%;
+	min-width:140px;
+	display: flex;
+}
+
+.job-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.job-title-column {
+	display: flex;
+	width: 10%;
+	min-width: 140px;
+}
+
+.job-description-column {
+	display: flex;
+	width:90%;
+}
+
+.job-color {
+	color: var(--accent-color);
+}
+
+.job-color-alt {
+	color: var(--accent-color-alt);
+}
+
+.hover-area:hover .job-hover-accent-color {
+	color: var(--accent-color);
+	transition: all 0.3s ease-out;
+}
+
+.job-hover-accent-color {
+	transition: all 0.3s ease-out;
+}
+
+.hover-area {
+	display:inline;
+}
+
+.last-updated {
+	margin-left:0.75rem;
+	margin-bottom:6.0rem;
+	font-style: italic;
+	color: var(--accent-color-grey);
+}
+
+@media only screen and (max-width: 1100px) {
+	.address-column {
+		display: none;
+	}	
+	.column-section {
+		flex-direction: column;
+	}
+	
+	.left-column, .right-column {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.header, .job-row {
+		flex-direction: column;
+	}
+	
+	.logo, .contact-section, .job-title-column, .job-description-column  {
+		width:100%;
+	}
+	
+	.job-title-column {
+		padding:0.4rem 0;
+	}
+	
+	.address-column {
+		display: none;
+	}
+	
+	.selected-works-item-heading {
+		flex-direction: column;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--accent-color: rgba(86, 42, 217, 0.8);
+		--accent-color-grey: rgba(161, 137, 224, 0.4);
+		
+	}
+	
+	body {
+		background: rgba(16, 8, 42, 1);
+		color: rgba(255, 255, 255, 0.7);
+	}
+} 
+
+
+/* Common */
+/*
+.header, {
+	display: flex;
+} */
+
+/* Header */
+
+/** Logo + Name **/
+
+
+/** Contact Area **/
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
