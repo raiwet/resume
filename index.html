@@ -4,21 +4,8 @@
 		<link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
 		<link href="assets/font-awesome/css/brands.css" rel="stylesheet">
 		<link href="assets/font-awesome/css/solid.css" rel="stylesheet">
+		<script src="assets/js/script.js" async></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-		<script>
-			myID = document.getElementById("customID");
-			
-			var myScrollFunc = function() {
-			  var y = window.scrollY;
-			  if (y >= 800) {
-				myID.className = "footer show"
-			  } else {
-				myID.className = "footer hide"
-			  }
-			};
-			
-			window.addEventListener("scroll", myScrollFunc);
-		</script>
 		<title>Resume &bull; Michael Raiwet</title>
 	</head>
 	<body>
@@ -1058,21 +1045,47 @@
 					</div>			
 				</div>
 			</div>
-			<a href="assets/pdf/resume/michael-raiwet-resume.pdf" target="_blank" class="footer">
+			<a href="assets/pdf/resume/michael-raiwet-resume.pdf" target="_blank" class="footer scroll-to-top ">
 				<div class="button-download" id="top">
 					<div class="button-icon">
 						<i class="fa-solid fa-file-arrow-down"></i>
 					</div>
 					<div class="button-text">
 						<div class="button-text-download">
-							Download PDF
+							Download
 						</div>
 						<div class="button-text-last-updated">
-							Updated on 2022-10-22
+							2022-10-22
 						</div>
 					</div>
 				</div>
 			</a>
 		</div>
+		<!--<script>
+			window.addEventListener('scroll', () => {
+				const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+				const scrolled = window.scrollY;
+				
+				console.log(scrollable);
+				if (Math.ceil(scrolled) === scrollable) {
+					alert('You\'ve reached the bottom!');
+				}
+				
+			});
+		</script>
+		<!--<script>
+			myID = document.getElementById("customID");
+			
+			var myScrollFunc = function() {
+			  var y = window.scrollY;
+			  if (y >= 800) {
+				myID.className = "footer show"
+			  } else {
+				myID.className = "footer hide"
+			  }
+			};
+			
+			window.addEventListener("scroll", myScrollFunc); 
+		</script> -->
 	</body>
 </html>

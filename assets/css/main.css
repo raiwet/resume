@@ -409,16 +409,15 @@ a, a:visited {
 	position: -webkit-sticky; 
 	position: sticky;
 	bottom: 40px;
-	left: 40px;
 	background: var(--accent-color);
-	border-radius: 60px;
+	border-radius: 50px;
 	border: 1px solid var(--accent-color);
-	display:block;
 	padding:12px;
-	width:170px;
+	width:135px;
 	user-select: none;
 	-webkit-user-select: none;
-	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);;
+	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
+	margin-left:10px;
 	margin-bottom:80px;
 }
 
@@ -447,7 +446,7 @@ a, a:visited {
 	display:flex;
 	font-weight: bold;
 	color: #ffffff;
-	font-size:0.8rem;
+	font-size:0.9rem;
 	height:20px;
 }
 
@@ -459,15 +458,6 @@ a, a:visited {
 	font-weight:300;
 	height:15px;
 	line-height: 15px;;
-}
-
-.hide {
-	opacity:0;
-	left:-100%;
-}
-.show {
-	opacity:1;
-	left:0;
 }
 
 
