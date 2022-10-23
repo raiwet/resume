@@ -6,7 +6,7 @@ Preamble ...
 html {
 	--icon-space: 25px;
 	--accent-color: rgba(86, 42, 217, 1);
-	--accent-color-alt: #004aff;
+	--accent-color-alt: rgba(0, 74, 255, 1);
 	--accent-color-grey: rgba(169, 165, 180, 0.8);
 	overscroll-behavior-x: none;
 }
@@ -414,11 +414,11 @@ a, a:visited {
 	border: 1px solid var(--accent-color);
 	display:block;
 	padding:12px;
-	width:160px;
+	width:170px;
 	user-select: none;
 	-webkit-user-select: none;
 	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
-	margin-left:10px;
+	margin-left:20px;
 	margin-bottom:80px;
 	opacity:0;
 	transition: all 0.3s;
@@ -455,7 +455,7 @@ a, a:visited {
 	font-weight: bold;
 	color: #ffffff;
 	font-size:0.9rem;
-	height:20px;
+
 }
 
 .button-text-last-updated {
@@ -514,8 +514,9 @@ a, a:visited {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--accent-color: rgba(86, 42, 217, 0.8);
+		--accent-color: rgba(72, 34, 182, 1);
 		--accent-color-grey: rgba(161, 137, 224, 0.4);
+		--accent-color-alt: rgba(0, 74, 255, 0.6);
 		
 	}
 	
@@ -523,6 +524,7 @@ a, a:visited {
 		background: rgba(16, 8, 42, 1);
 		color: rgba(255, 255, 255, 0.7);
 	}
+
 } 
 
 
