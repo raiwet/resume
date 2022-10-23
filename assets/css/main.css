@@ -99,6 +99,11 @@ sup {
 	-webkit-user-select: none;
 }
 
+.hover-area {
+	user-select: none;
+	-webkit-user-select: none;
+}
+
 .timeline-headings {
 	display:flex;
 	flex-direction: column;
