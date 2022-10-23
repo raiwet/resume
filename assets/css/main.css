@@ -45,6 +45,8 @@ sup {
 	width: 100%;
 	display:flex;
 	justify-content: space-between;
+	user-select: none;
+	-webkit-user-select: none;
 	
 }
 
