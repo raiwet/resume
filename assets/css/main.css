@@ -47,6 +47,7 @@ sup {
 	justify-content: space-between;
 	user-select: none;
 	-webkit-user-select: none;
+	cursor: default;
 	
 }
 
@@ -99,11 +100,13 @@ sup {
 	justify-content: space-between;
 	user-select: none;
 	-webkit-user-select: none;
+	cursor: default;
 }
 
 .company-row {
 	user-select: none;
 	-webkit-user-select: none;
+	cursor: default;
 }
 
 .timeline-headings {
@@ -162,6 +165,14 @@ td {
 	height: 32px;
 	color: rgba(255, 255, 255, 0.4);
 	text-align: center;
+}
+
+table a, table a:hover {
+	color: inherit;
+	cursor: default;
+	text-decoration: none;
+	display: block;
+	padding: 9px 4px;
 }
 
 /** Employment + Education History **/
@@ -413,6 +424,7 @@ a, a:visited {
 }
 
 .footer {
+	opacity:0;
 	position: -webkit-sticky; 
 	position: sticky;
 	bottom: 40px;
@@ -427,7 +439,6 @@ a, a:visited {
 	box-shadow: 0px 8px 15px rgba(86, 42, 217, 0.3);
 	margin-left:20px;
 	margin-bottom:80px;
-	opacity:0;
 	transition: all 0.3s;
 }
 
