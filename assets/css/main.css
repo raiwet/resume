@@ -120,7 +120,7 @@ sup {
 	display: flex;
 	padding: 0 0.8rem;
 	vertical-align: middle;
-	font-size: 0.5rem;
+	font-size: 8px;
 	text-transform: uppercase;
 	border-bottom: 1px solid var(--accent-color-grey);
 	border-right: 1px solid var(--accent-color-grey);
@@ -152,7 +152,7 @@ th {
 	padding: 0 0.8rem 0.7rem 0.8rem;
 	border-left: 1px solid var(--accent-color-grey);
 	border-right: 1px solid var(--accent-color-grey);
-	font-size: 0.6rem;
+	font-size: 8px;
 	height:31.5px;
 	text-align: left;
 	vertical-align: bottom;
@@ -161,7 +161,7 @@ th {
 
 td {
 	border: 1px solid var(--accent-color-grey);
-	font-size:0.5rem;
+	font-size:8px;
 	height: 32px;
 	color: rgba(255, 255, 255, 0.4);
 	text-align: center;
@@ -171,8 +171,6 @@ table a, table a:hover {
 	color: inherit;
 	cursor: default;
 	text-decoration: none;
-	display: block;
-	padding: 6px 0;
 }
 
 /** Employment + Education History **/
