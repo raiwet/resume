@@ -122,8 +122,8 @@ sup {
 	vertical-align: middle;
 	font-size: 8px;
 	text-transform: uppercase;
-	border-bottom: 1px solid var(--accent-color-grey);
-	border-right: 1px solid var(--accent-color-grey);
+	border-bottom: 1.1px solid var(--accent-color-grey);
+	border-right: 1.1px solid var(--accent-color-grey);
 	height: 31px;
 	align-items: center;
 }
@@ -171,6 +171,7 @@ table a, table a:hover {
 	color: inherit;
 	cursor: default;
 	text-decoration: none;
+	background: #ccc;
 }
 
 /** Employment + Education History **/
