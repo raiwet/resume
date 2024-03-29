@@ -82,11 +82,9 @@ sup {
 }
 
 .contact-column {
-	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-width:185px;
 }
 
 .contact-column-item {
