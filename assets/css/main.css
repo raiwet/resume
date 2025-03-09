@@ -549,35 +549,20 @@ a, a:visited {
 
 } 
 
+@media print {
+	@page {margin:2rem 0;}
 
-/* Common */
-/*
-.header, {
-	display: flex;
-} */
+	body {font-size: 0.8rem;}
 
-/* Header */
+	.no-print {display:none;}
 
-/** Logo + Name **/
+	.job-title-column {min-width: 100px;}
 
 
-/** Contact Area **/
+	.job-row, .job-item, .left-column-item {page-break-inside: avoid;}
 
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-
-
-
+	::-webkit-scrollbar {display: none;}
+}
 
 
 
